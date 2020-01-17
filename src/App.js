@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Clock from'./component/clock';
+import Clock from './component/clock';
+import Event from './component/event';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -22,6 +24,7 @@ class App extends Component {
             Learn React Hi {this.props.name}
           </a>
           <Clock />
+          <Event />
           
         </header>
       </div>
