@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import Clock from './component/clock';
 import Event from './component/event';
 
+
 import logo from './logo.svg';
 import './App.css';
+import ColorBlock from './component/colorBlock';
 
 
 class App extends Component {
@@ -25,7 +27,7 @@ class App extends Component {
           </a>
           <Clock />
           <Event />
-          
+          <ColorBlock />
         </header>
       </div>
     );
