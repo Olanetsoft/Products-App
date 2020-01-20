@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
+import './productRow.css';
 
 class ProductRow extends Component {
     render() {
         return (
             <tr>
-                <td><span className={this.props.product.stocked ? '' : 'ProductRow-out-of-stock'}></span>
+                <td><span className={this.props.product.stocked ? '' : 'ProductRow-out-of-stock'}>
                     {this.props.product.name}
+                </span>
                 </td>
                 <td>
                     {this.props.product.price}
                 </td>
                 <td>
-                    <button>x</button>
+                    <button onClick={this.destroy} style={{ color: 'red' }}>x</button>
                 </td>
             </tr>
         );

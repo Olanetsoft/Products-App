@@ -1,17 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Filters extends Component {
+class Filters extends React.Component {
     render() {
         return (
             <form>
-                <input type="text" placeholder="Search..." />
-                    <p>
-                        <label>
-                            <input type="checkbox"/>
-                            &nbsp;
-                            Only show products in stock
-                        </label>
-                    </p>
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    value={this.props.filterText}
+                />
+                <p>
+                    <input
+                        type="checkbox"
+                        checked={this.props.inStockOnly}
+                    />
+                    &nbsp;
+                    Only show products in stock
+                </p>
             </form>
         );
     }
