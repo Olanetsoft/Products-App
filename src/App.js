@@ -4,6 +4,7 @@ import Event from './component/event';
 import ColorBlock from './component/colorBlock';
 import Products from './component/product';
 
+import './App.css';
 
 
 
